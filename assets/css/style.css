@@ -933,27 +933,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Venue Section
+# Organizers Section
 --------------------------------------------------------------*/
-#venue {
+#organizers {
   padding: 60px 0;
 }
-#venue .container-fluid {
+#organizers .container-fluid {
   margin-bottom: 3px;
 }
-#venue .venue-map iframe {
+#organizers .organizers-map iframe {
   width: 100%;
   height: 100%;
   min-height: 300px;
 }
-#venue .venue-info {
+#organizers .organizers-info {
   background: url("../img/venue-info-bg.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-#venue .venue-info:before {
+#organizers .organizers-info:before {
   content: "";
   background: rgba(13, 20, 41, 0.8);
   position: absolute;
@@ -962,32 +962,32 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
 }
-#venue .venue-info h3 {
+#organizers .organizers-info h3 {
   font-size: 36px;
   font-weight: 700;
   color: #fff;
 }
 @media (max-width: 574px) {
-  #venue .venue-info h3 {
+  #organizers .organizers-info h3 {
     font-size: 24px;
   }
 }
-#venue .venue-info p {
+#organizers .organizers-info p {
   color: #fff;
   margin-bottom: 0;
 }
-#venue .venue-gallery-container {
+#organizers .organizers-gallery-container {
   padding-right: 12px;
 }
-#venue .venue-gallery {
+#organizers .organizers-gallery {
   overflow: hidden;
   border-right: 3px solid #fff;
   border-bottom: 3px solid #fff;
 }
-#venue .venue-gallery img {
+#organizers .organizers-gallery img {
   transition: all ease-in-out 0.4s;
 }
-#venue .venue-gallery:hover img {
+#organizers .organizers-gallery:hover img {
   transform: scale(1.1);
 }
 
@@ -996,20 +996,20 @@ h1, h2, h3, h4, h5, h6 {
   cursor: default;
 }
 
-#venue .schedule-item {
+#organizers .schedule-item {
   border-bottom: 1px solid #cad4f6;
   padding-top: 15px;
   padding-bottom: 15px;
   transition: background-color ease-in-out 0.3s;
 }
-#venue .schedule-item:hover {
+#organizers .schedule-item:hover {
   background-color: #fff;
 }
-#venue .schedule-item time {
+#organizers .schedule-item time {
   padding-bottom: 5px;
   display: inline-block;
 }
-#venue .schedule-item .speaker {
+#organizers .schedule-item .speaker {
   width: 90px;
   height: 90px;
   overflow: hidden;
@@ -1017,51 +1017,178 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   margin: 0 10px 10px 0;
 }
-#venue .schedule-item .speaker img {
+#organizers .schedule-item .speaker img {
   width: 100%;
   height: 100%;
   transform: translateX(-50%);
   margin-left: 50%;
   transition: all ease-in-out 0.3s;
 }
-#venue .schedule-item h4 {
+#organizers .schedule-item h4 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
 }
-#venue .schedule-item h4 span {
+#organizers .schedule-item h4 span {
   font-style: italic;
   color: black; /* #19328e; */
   font-weight: normal;
   font-size: 16px;
 }
-#venue .schedule-item h4 a {
+#organizers .schedule-item h4 a {
   color: black;
 }
 
-#venue .schedule-item .organizer-font {
+#organizers .schedule-item .organizer-font {
   font-family: "Inter", "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
-#venue .schedule-item h4 a:hover {
+#organizers .schedule-item h4 a:hover {
   color: #FF552E;
 }
-#venue .schedule-item p {
+#organizers .schedule-item p {
   font-style: italic;
   color: #152b79;
   margin-bottom: 0;
 }
-#venue .schedule-item p a {
+#organizers .schedule-item p a {
   color: #152b79;
 }
-#venue .schedule-item p a:hover {
+#organizers .schedule-item p a:hover {
   color: #FF552E;
 }
 
-#venue .tab-pane {
+#organizers .tab-pane {
   transition: ease-in-out 0.2s;
   padding-bottom: 30px;
 }
+
+/*--------------------------------------------------------------
+# Program Committee Section
+--------------------------------------------------------------*/
+#program-committee {
+  padding: 60px 0;
+}
+#program-committee .container-fluid {
+  margin-bottom: 3px;
+}
+#program-committee .program-committee-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+#program-committee .program-committee-info {
+  background: url("../img/venue-info-bg.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#program-committee .program-committee-info:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#program-committee .program-committee-info h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+@media (max-width: 574px) {
+  #program-committee .program-committee-info h3 {
+    font-size: 24px;
+  }
+}
+#program-committee .program-committee-info p {
+  color: #fff;
+  margin-bottom: 0;
+}
+#program-committee .program-committee-gallery-container {
+  padding-right: 12px;
+}
+#program-committee .program-committee-gallery {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+#program-committee .program-committee-gallery img {
+  transition: all ease-in-out 0.4s;
+}
+#program-committee .program-committee-gallery:hover img {
+  transform: scale(1.1);
+}
+
+#program-committee .schedule-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+#program-committee .schedule-item:hover {
+  background-color: #fff;
+}
+#program-committee .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+#program-committee .schedule-item .speaker {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+#program-committee .schedule-item .speaker img {
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+#program-committee .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#program-committee .schedule-item h4 span {
+  font-style: italic;
+  color: black; /* #19328e; */
+  font-weight: normal;
+  font-size: 16px;
+}
+#program-committee .schedule-item h4 a {
+  color: black;
+}
+
+#program-committee .schedule-item .organizer-font {
+  font-family: "Inter", "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+#program-committee .schedule-item h4 a:hover {
+  color: #FF552E;
+}
+#program-committee .schedule-item p {
+  font-style: italic;
+  color: #152b79;
+  margin-bottom: 0;
+}
+#program-committee .schedule-item p a {
+  color: #152b79;
+}
+#program-committee .schedule-item p a:hover {
+  color: #FF552E;
+}
+
+#program-committee .tab-pane {
+  transition: ease-in-out 0.2s;
+  padding-bottom: 30px;
+}
+
 
 /*--------------------------------------------------------------
 # Past Events Section
