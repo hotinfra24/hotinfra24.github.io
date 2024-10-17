@@ -230,15 +230,14 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Workshop Program</h2>
-          <!-- <p style="color: #0e1b4d; font-size: large;"><b>Location: Salon K, <a style="color: #0e1b4d;" href="https://www.hilton.com/en/hotels/auscvhh-hilton-austin/?SEO_id=GMB-AMER-HH-AUSCVHH&y_source=1_MTIyMDkxMS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D">Hilton Austin</a></b></p> -->
-          <p>To Be Announced</p>
+          <p style="color: #0e1b4d; font-size: large;"><b>Location: Salon K, <a style="color: #0e1b4d;" href="https://www.hilton.com/en/hotels/auscvhh-hilton-austin/">Hilton Austin</a></b></p>
         </div>
 
         <!-- Remove "style=display:none" from div below to make it show -->
         <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
         
 
-          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+          <div role="tabpanel" class="col-lg-12 tab-pane fade show active" id="day-1">
 
             <!-- <div class="row schedule-item">
               <div class="col-md-10">
@@ -247,28 +246,438 @@
             </div> -->
 
             <div class="row schedule-item">
-              <!-- <div class="col-md-2"><time>Time: TBD</time></div> -->
-              <div class="col-md-2"></div>
+              <div class="col-md-2"><time>8:00 AM - 9:00 AM</time></div>
               <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/christos_kozyrakis.jpg" alt="Christos Kozyrakis">
-                </div>
-                <br>
-                <h4>Keynote Speaker I</h4>
-                <p><a href="https://web.stanford.edu/~kozyraki/">Christos Kozyrakis</a> (Stanford)</p>
+                <h4>Breakfast</h4>
               </div>
             </div>
 
             <div class="row schedule-item">
-              <!-- <div class="col-md-2"><time>Time: TBD</time></div> -->
-              <div class="col-md-2"></div>
+              <div class="col-md-2"><time>9:00 AM - 9:05 AM</time></div>
               <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/ricardo.jpg" alt="Ricardo Bianchini">
-                </div>
+                <h4>Opening Remark</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>9:05 AM - 10:05 AM</time></div>
+              <div class="col-md-10" style="margin-bottom: 15px;">
+                <h4>Keynote Talk</h4>
+                <h4 class="keynote-title">Topic: To Be Announced</h4>
+                <p class="speaker-name"><a href="https://web.stanford.edu/~kozyraki/">Christos Kozyrakis</a> (Stanford)</p>
                 <br>
-                <h4>Keynote Speaker II</h4>
-                <p><a href="https://www.microsoft.com/en-us/research/people/ricardob/">Ricardo Bianchini</a> (Microsoft)</p>
+                <div class="speaker"><img src="assets/img/speakers/christos_kozyrakis.jpg" alt="Christos Kozyrakis"></div>
+                <p>
+                  <b>Abstract</b>
+                  <br>
+                  To be announced.
+                </p>
+                <!-- <hr>
+                <p>
+                  <b>Bio</b>
+                  <br>
+                </p> -->
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:05 AM - 10:15 AM</time></div>
+              <div class="col-md-10">
+                <h4>Short Break</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:15 AM - 10:45 AM</time></div>
+              <div class="col-md-10">
+                <h4>Session I: AI Platforms: Challenges and Opportunities</h4>
+                <!-- <p class="session-chair">Session Chair: Name (Organization)</p> -->
+                <ul>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Silent Data Corruptions in AI Systems: Evaluation and Mitigation</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final83.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Xun Jiao, Fred Lin, Harish D. Dixit, Joel Coburn, Daniel Moore, Sriram Sankar (Meta)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> The increasing complexity, heterogeneity, and scale of AI hardware systems make them increasingly susceptible to hardware faults, e.g., silent data corruption (SDC). Tackling this challenge requires answering the question: How to evaluate and mitigate the impact of SDCs on AI systems? For evaluation, we propose a novel quantitative metric, Parameter Vulnerability Factor (PVF), inspired by architectural vulnerability factor (AVF) in computer architecture, aiming to standardize the evaluation of SDC impact on AI models. PVF focuses on SDC occurring in model parameters &ndash; we define a model parameter's PVF as the probability that a corruption in that particular model parameter would result in an incorrect output. Through extensive fault injection (FI), we obtain PVF for a set of open-source models including DLRM, CNN, and BERT, as well as three Meta's production ranking and recommendation model, based on which we present unique insights. For mitigation, we propose Dr. DNA, a novel approach to detect and mitigate SDCs by formulating and extracting a set of unique SDC signatures from the Distribution of neuron activations (DNA). Through an extensive evaluation across 10 different models, results show that Dr. DNA achieves 100% SDC detection rate for most cases, 95% detection rate on average and >90% detection rate across all cases, representing 20% - 70% improvement over baselines. Dr. DNA also mitigates the impact of SDCs by recovering model performance with &lt;1% memory overhead and &lt;2.5% latency overhead.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Hardware-Assisted Virtualization of Neural Processing Units for Cloud Platforms</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final82.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Yuqi Xue, Yiqi Liu (UIUC); Lifeng Nai (Google); Jian Huang (UIUC)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> Cloud platforms today have been deploying hardware accelerators like neural processing units (NPUs) for powering machine learning (ML) inference services. To maximize the resource utilization while ensuring reasonable quality of service, a natural approach is to virtualize NPUs for efficient resource sharing for multi-tenant ML services. However, virtualizing NPUs for modern cloud platforms is not easy. This is not only due to the lack of system abstraction support for NPU hardware, but also due to the lack of architectural and ISA support for enabling fine-grained dynamic operator scheduling for virtualized NPUs.
+                      </p>
+                      <br>
+                      <p>
+                        We present Neu10, a holistic NPU virtualization framework. We investigate virtualization techniques for NPUs across the entire software and hardware stack. Neu10 consists of (1) a flexible NPU abstraction called vNPU, which enables fine-grained virtualization of the heterogeneous compute units in a physical NPU (pNPU); (2) a vNPU resource allocator that enables pay-as-you-go computing model and flexible vNPU-to-pNPU mappings for improved resource utilization and cost-effectiveness; (3) an ISA extension of modern NPU architecture for facilitating fine-grained tensor operator scheduling for multiple vNPUs. We implement Neu10 based on a production-level NPU simulator. Our experiments show that Neu10 improves the throughput of ML inference services by up to 1.4x and reduces the tail latency by up to 4.6x, while improving the NPU utilization by 1.2x on average, compared to state-of-the-art NPU sharing approaches.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Decluttering the Data Mess in LLM Training</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final5.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Maximilian B&#246;ther, Dan Graur, Xiaozhe Yao, Ana Klimovic (ETH Zurich)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> Training large language models (LLMs) presents new challenges for managing training data due to ever-growing model and dataset sizes. State-of-the-art LLMs are trained over trillions of tokens that are aggregated from a cornucopia of different datasets, forming collections such as RedPajama, Dolma, or FineWeb. However, as the data collections grow and cover more and more data sources, managing them becomes time-consuming, tedious, and prone to errors. The proportion of data with different characteristics (e.g., language, topic, source) has a huge impact on model performance.
+                      </p>
+                      <br>
+                      <p>
+                        In this work-in-progress paper, we discuss three challenges we observe for training LLMs due to the lack of system support for managing and mixing data collections. Then, we present Mixtera, a system to support LLM training data management.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:45 AM - 11:00 AM</time></div>
+              <div class="col-md-10">
+                <h4>Coffee Break</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM - 12:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Session II: Cloud Efficiency: New Approaches New Opportunities</h4>
+                <!-- <p class="session-chair">Session Chair: Name (Organization)</p> -->
+                <ul>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">SoK: Virtualization Challenges and Techniques in Serverless Computing</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final86.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Vasudha Devarakonda, Aleksandr Earnest, Chia-Che Tsai (Texas A&M University)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> This systematization of knowledge (SoK) paper summarizes the discussion of virtualization challenges and the corresponding techniques specific to serverless computing. We examine virtualization solutions, including paravirtualization, containers, lightweight hypervisors and kernels, and unikernels, and their applicability to serverless. Then, we discuss several challenges, including cold-start optimization, resource co-location, benchmarking, and the research-production gap, hoping to inspire future research.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Harmonizing Diverse Compute Resources for Efficiency</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final34.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Dilina Dehigama, Shyam Jesalpura (University of Edinburgh); Marios Kogias (Imperial College London); Boris Grot (University of Edinburgh)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> Online services are characterized by significant load fluctuations at find-grained intervals when coarse-grained load measurements indicate a relatively stable load. Running such services on virtual machines (VMs) rented from a cloud provider like AWS, which is a typical way to deploy online applications today, is inefficient due to the need to overprovision VM capacity to meet the SLO under variable load. In contrast, serverless computing is highly elastic but is prohibitively expensive for serving a large volume of requests. We thus argue for combining the different types of compute (i.e., VM and serverless instances) to achieve both cost-efficiency and elasticity. Our results show that hybrid compute is more cost effective than an optimal VM-only allocation that provisions just enough resource to meet the SLO using perfect knowledge of future load.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Designing Cloud Server for Lower Carbon</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final22.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Jaylen Wang (Carnegie Mellon University); Daniel S. Berger (Microsoft; University of Washington); Fiodar Kazhamiaka, Celine Irvene, Chaojie Zhang, Esha Choukse, Kali Frost, Rodrigo Fonseca, Brijesh Warrier, Chetan Bansal, Jonathan Stern, Ricardo Bianchini (Microsoft); Akshitha Sriraman (Carnegie Mellon University)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> To mitigate climate change, we must reduce carbon emissions from hyperscale cloud computing. We find that cloud compute servers cause the majority of emissions in a general-purpose cloud. Thus, we motivate designing carbon-efficient compute server SKUs, or GreenSKUs, using recently-available low-carbon server components. To this end, we design and build three GreenSKUs using low-carbon components, such as energy-efficient CPUs, reused old DRAM via CXL, and reused old SSDs.
+                      </p>
+                      <br>
+                      <p>
+                        We detail several challenges that limit GreenSKUs' carbon savings at scale and may prevent their adoption by cloud providers. To address these challenges, we develop a novel methodology and associated framework, GSF (Green SKU Framework), that enables a cloud provider to systematically evaluate a GreenSKU's carbon savings at scale. We implement GSF within Microsoft Azure's production constraints to evaluate our three GreenSKUs' carbon savings. Using GSF, we show that our most carbon-efficient GreenSKU reduces emissions per core by 28% compared to currently-deployed cloud servers. When designing GreenSKUs to meet applications' performance requirements, we reduce emissions by 15%. When incorporating overall data center overheads, our GreenSKU reduces Azure's net cloud emissions by 8%.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">OpenInfra: A Co-simulation Framework for the Infrastructure Nexus</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final1.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Jiaheng Lu, Yunming Xiao, Shmeelok Chakraborty (University of Michigan); Silvery Fu (UC Berkeley); Yoon Sung Ji, Ang Chen, Mosharaf Chowdhury (University of Michigan); Nalini Rao (EPRI); Sylvia Ratnasamy (UC Berkeley); Xinyu Wang (University of Michigan)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> In this paper, we report our work-in-progress design on a co-simulation framework targeting the infrastructure nexus, discuss the research challenges, and perform initial validation with a few case studies.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 PM - 1:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Lunch</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>1:00 PM - 2:00 PM</time></div>
+              <div class="col-md-10" style="margin-bottom: 15px;">
+                <h4>Keynote Talk</h4>
+                <h4 class="keynote-title">Topic: To Be Announced</h4>
+                <p class="speaker-name"><a href="https://www.microsoft.com/en-us/research/people/ricardob/">Ricardo Bianchini</a> (Microsoft)</p>
+                <br>
+                <div class="speaker"><img src="assets/img/speakers/ricardo.jpg" alt="Ricardo Bianchini"></div>
+                <p>
+                  <b>Abstract</b>
+                  <br>
+                  To be announced.
+                </p>
+                <!-- <hr>
+                <p>
+                  <b>Bio</b>
+                  <br>
+                </p> -->
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>2:00 PM - 2:15 PM</time></div>
+              <div class="col-md-10">
+                <h4>Short Break</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>2:15 PM - 3:15 PM</time></div>
+              <div class="col-md-10">
+                <h4>Session III: AI Systems: Algorithms, Networking, and Hardware</h4>
+                <!-- <p class="session-chair">Session Chair: Name (Organization)</p> -->
+                <ul>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Immediate Communication for Distributed AI Tasks</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final2.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Jihao Xin (KAUST); Seongjong Bae, KyoungSoo Park (Seoul National University); Marco Canini (KAUST); Changho Hwang (Microsoft Research)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> Large AI models have necessitated efficient communication strategies across multi-GPU and multi-node infrastructures due to their increasing complexity. Current methods focusing on inter-operator overlaps fail when dependencies exist, leading to underutilized hardware. DistFuse addresses this by enabling fine-grained overlapping of computation and communication, triggering communication as soon as data is ready, and reducing latency. Initial experiments show up to 44.3% reduction in communication latency of Llama3-70B inference on a single node, demonstrating its potential to accelerate diverse AI workloads.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Do Large Language Models Need a Content Delivery Network?</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final19.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Yihua Cheng, Kuntai Du, Jiayi Yao, Junchen Jiang (The University of Chicago)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> As the use of large language models (LLMs) expands rapidly, so does the range of knowledge needed to supplement various LLM queries. Thus, enabling flexible and efficient injection of new knowledge in LLM inference is critical. Three high-level options exist: (i) embedding the knowledge in LLM's weights (i.e., fine-tuning), (ii) including the knowledge as a part of LLM's text input (i.e., in-context learning), or (iii) injecting the KV caches of the new knowledge to LLM during prefill. This paper argues that, although fine-tuning and in-context learning are popular, using KV caches as the medium of knowledge could simultaneously enable more modular management of knowledge injection and more efficient LLM serving with low cost and fast response. To realize these benefits, we envision a Knowledge Delivery Network (KDN), a new system component in LLM services that dynamically optimizes the storage, transfer, and composition of KV cache across LLM engines and other compute and storage resources. We believe that, just like content delivery networks (CDNs), such as Akamai, enabled the success of the Internet ecosystem through their efficient data delivery, KDNs will be critical to the success of LLM applications through their efficient knowledge delivery. We have open-sourced a KDN prototype in <a href="https://github.com/LMCache/LMCache">https://github.com/LMCache/LMCache</a>.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Scaling Deep Learning Computation over the Inter-core Connected Intelligence Processor</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final10.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Yiqi Liu, Yuqi Xue (UIUC); Yu Cheng (Peking University; Microsoft); Lingxiao Ma, Ziming Miao, Jilong Xue (Microsoft); Jian Huang (UIUC)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> As AI chips incorporate numerous parallelized cores to scale deep learning (DL) computing, chips like Graphcore IPU enable high-bandwidth and low-latency inter-core links. They allow each core to directly access other cores' scratchpad memory, which enables new parallel computing paradigms. However, without proper support for the inter-core connections in current DL compilers, it is hard to exploit the benefits of this new architecture. We present T10, the first DL compiler to exploit the inter-core bandwidth and distributed on-chip memory on AI chips. To formulate the computation and communication patterns of tensor operators in the new architecture, T10 introduces a distributed tensor abstraction rTensor. T10 maps a DNN model to execution plans with a compute-shift pattern, by partitioning DNN computation into sub-operators and mapping them to cores, so that the cores can exchange data following predictable patterns. T10 alleviates unnecessary inter-core communications, makes globally optimized trade-offs between on-chip memory usage and inter-core communication overhead, and selects the best execution plan from a vast optimization space.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Optimizing Transformer Inference with Selective Distillation: Layerwise Conversion to Linear Attention</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final56.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Yeonju Ro, Zhenyu Zhang, Vijay Chidambaram, Aditya Akella (UT Austin)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> Transformer-like architectures with softmax attention have demonstrated exceptional performance in language modeling by capturing long-term token dependencies and ensuring efficient training. However, their scalability is constrained by the quadratic computation costs incurred during inference. To mitigate this issue, subquadratic models with SSMs and linear attentions have been introduced; however, such models achieve lower accuracy than Transformers. In this work, we aim to get the best of both worlds: we seek to convert carefully selected attention layers in a Transformer to gated linear attention layers, without sacrificing accuracy. Specifically, we analyze the performance benefits of subquadratic models and propose a distillation method that progressively converts the attention layer to a gated linear attention layer. While selecting layers to convert, we leverage downstream task accuracy as a criterion to minimize the accuracy loss caused by conversion. Our evaluation demonstrates that task accuracy is an effective criteria that can be used in adaptive distillation.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>3:15 PM - 3:45 PM</time></div>
+              <div class="col-md-10">
+                <h4>Coffee Break</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>3:45 PM - 4:30 PM</time></div>
+              <div class="col-md-10">
+                <h4>Session IV: Resource Scheduling: Not Only for Efficiency But Also for Societal Good</h4>
+                <!-- <p class="session-chair">Session Chair: Name (Organization)</p> -->
+                <ul>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Adaptive Resource Allocation to Enhance the Kubernetes Performance for Large-Scale Clusters</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final26.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Jiayin Luo, Xinkui Zhao, Yuxin Ma, Shengye Pang, Shuiguang Deng, Jianwei Yin (Zhejiang University)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> The advent of cloud computing has led to a dramatic increase in the deployment of hyper-scale, diverse workloads in containerized form on cloud infrastructures. This expansion necessitates the management of numerous large-scale clusters. However, Kubernetes (k8s), the industry standard for container orchestration, faces challenges with low scheduling throughput and high request latency in such environments. We identify resource contention among components co-located on the same master node as a primary bottleneck. To address this, we introduce a lightweight framework designed to enhance the performance and scalability of Kubernetes clusters. Our approach adaptively allocates resources among co-located components, improving their overall performance. Implemented as a non-intrusive solution, our evaluations across various cluster scales show significant improvements, with a 7.3x increase in cluster scheduling throughput and a 37.3% reduction in request latency, surpassing the performance of vanilla Kubernetes and baseline resource allocation strategies.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Mewz: Lightweight Execution Environment for WebAssembly with High Isolation and Portability using Unikernels</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final21.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Soichiro Ueda (Kyoto University); Ai Nozaki (University of Tokyo); Daisuke Kotani, Yasuo Okabe (Kyoto University)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> Cloud computing requires isolation and portability for workloads. Virtual machines, for isolation, and containers, for portability, are widely used to achieve these requirements these days. However, using VMs and containers together entails two problems. First, VMs and containers have overheads that degrade performance. In addition, container images depend on host operating systems and architectures. To solve these problems, we propose a new system that distributes applications as WebAssembly (Wasm) and runs them as unikernels. Additionally, we propose a mechanism to convert a Wasm application into a unikernel image with the Wasm binary AoT-compiled to native code. We evaluated the performance of the system by running a simple HTTP server compiled into Wasm. The result showed that it ran Wasm applications with lower overhead than existing technologies.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Demographic Bias in Web Scheduling Systems</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final54.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Sara Mahdizadeh Shahri, Akshitha Sriraman (Carnegie Mellon University)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> Modern web systems, especially scheduling systems, often adopt a "performance-first" approach, where they prioritize sending quick responses to the end user to improve Quality of Experience (QoE). We posit that putting performance first, however, might make scheduling systems introduce request priorities that may cause responses to be biased against certain user demographics. For example, to improve QoE, existing scheduling systems often prioritize requests that face lower network delays, which may implicitly cause biases against some requests that originate from rural areas.
+                      </p>
+                      <br>
+                      <p>
+                        To validate our hypothesis, we systematically study and define demographic bias for scheduling systems. We investigate whether existing scheduling systems can (unintentionally) introduce demographic bias to improve performance, precipitating discrimination against certain user demographics. We detail two case studies to show that demographic bias can occur in open-source schedulers. We then design BiasCheck, a scheduler that meets performance goals while reducing bias. We demonstrate that BiasCheck significantly reduces demographic bias while causing only a few SLO violations, compared to existing schedulers.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>4:30 PM - 4:45 PM</time></div>
+              <div class="col-md-10">
+                <h4>Short Break</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>4:45 PM - 5:30 PM</time></div>
+              <div class="col-md-10">
+                <h4>Session V: Infrastructure Development: New Tools with New Techniques</h4>
+                <!-- <p class="session-chair">Session Chair: Name (Organization)</p> -->
+                <ul>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Revisiting Distributed Programming in the CXL Era</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final74.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Teng Ma (Alibaba Group); Mingxing Zhang, Kang Chen, Jialiang Huang (Tsinghua University); Zheng Liu (Alibaba Group); Yongwei Wu (Tsinghua University)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> As Moore's Law slows, distributed programming is increasingly prioritized to enhance system performance through horizontal scaling. This paper revisits the paradigms of message passing (MP) and distributed shared memory (DSM) regarding evolving interconnect technologies, particularly Compute Express Link (CXL). DSM's unified memory space offers simplicity in distributed programming by abstracting data communication complexities, but MP remains more prevalent due to its flexibility and programming-friendliness. We explore the memory sharing and pooling of CXL, which enable low-latency, coherent data transfers between multiple hosts. We address the complexities involved in managing shared states, particularly in the context of partial failures &ndash; termed Partial Failure Resilient DSM (RDSM). Thus we propose a memory management system named CXLSHM that leverages reference counting and distributed vector clocks for robust memory management. To be compatible with the message passing model, we introduce a CXL-based RPC named HydraRPC, which utilizes CXL shared memory to bypass data copying and serialization.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Towards Optimal Remote JIT Compilation Scheduling for the JVM</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final79.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">
+                      Richard Kha, Nikhil Sreekumar (University of Toronto); Alexey Khrabrov (University of Toronto; IBM); Eyal de Lara, Angela Demke Brown, Moshe Gabel (University of Toronto); Marius Pirvu (IBM)
+                    </div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> In the Java Virtual Machine (JVM), Just-In-Time (JIT) compilation is used to speed up Java applications, however, JIT compilation incurs significant memory and CPU runtime overheads. JITServer is a disaggregated JIT compiler in the Eclipse OpenJ9 JVM &ndash; it decouples the JIT compiler from the JVM, thereby reducing CPU and memory requirements of JVM client applications.
+                      </p>
+                      <br>
+                      <p>
+                        JITServer schedules remote compilation requests from connected clients in first-come, first-served (FCFS) order. We show that when a JITServer instance is under high load, the scheduler performs better when it considers client information for each compilation request. Prioritizing requests from newly connected clients helps those clients warm-up rapidly, but risks starving requests from older clients. We developed a scheduling algorithm we call ALDCF (Alternating Least Done Client First) that prioritizes requests from clients with fewer completed compilation requests, while reducing starvation of older clients through alternating with FCFS. In our experiments, ALDCF reduces the average client JVM runtime by up to 9% compared to FCFS, while controlling starvation.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div style="display: block; clear: both;">
+                      &nbsp;
+                      <div class="paper-title">Lotus: Characterize Architecture Level CPU-based Preprocessing in Machine Learning Pipelines</div>
+                      <div class="paper-metadata">
+                        <a href="./papers/hotinfra24-final75.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                      </div>
+                    </div>
+                    <div class="paper-authors">Rajveer Bachkaniwala, Harshith Lanka, Kexin Rong, Ada Gavrilovska (Georgia Institute of Technology)</div>
+                    <div class="abstract">
+                      <p>
+                        <b>Abstract:</b> With the slowdown of Moore's law, the performance of data-intensive workloads require significant compute capacity and power. In machine learning (ML) pipelines, preprocessing has significant compute and power requirement, involving tasks such as loading, decoding, and applying transformations. To combat the preprocessing bottleneck, substantial efforts have been made with prior works introducing optimizations such as CPU and I/O parallelism, accelerator offloading, on-node/distributed computing as well as caching strategies. However, less attention has been focused on optimizing the preprocessing pipeline as a function of the CPU architecture's efficiency in executing it. The performance of preprocessing tasks is intrinsically linked to the CPU's microarchitecture, memory hierarchy, and the efficiency of its instruction pipeline.
+                      </p>
+                      <br>
+                      <p>
+                        Our work contributes to alleviate the gap by introducing LOTUS, a profiling tool specifically designed for the preprocessing stage of ML pipelines to aid future optimizations across the stack. The insights provided by LOTUS enable practitioners to evaluate the limitations of their CPU architecture and the efficiency of their preprocessing pipelines across different configurations, such as varying the number of preprocessing workers.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>5:30 PM</time></div>
+              <div class="col-md-10">
+                <h4>SOSP Conference Reception</h4>
               </div>
             </div>
 
@@ -305,7 +714,7 @@
                 <p>
                   <b>Abstract</b>
                   <br>
-                  We are at an interesting inflection point in the design of computing systems. On one hand, demand for computing is accelerating at phenomenal rates, powered by the AI revolution and ever deeper processing on larger volumes of data, and amplified by smart edge devices and cloud computing. On the other hand, Moore’s law is slowing down. This is challenging traditional assumptions around cheaper and more energy-efficient systems every generation, and leading to a significant supply-demand gap for future computing systems.  In this talk, we discuss how this current computing landscape motivates a significant rethinking of how we design future infrastructure. We present two broad themes around (1) efficient systems design through custom silicon accelerators and (2) efficient systems utilization through software-defined infrastructure. We will summarize our experience in these areas, and discuss key learnings and future opportunities for innovation. Looking ahead, we will highlight some additional grand challenges and opportunities for the community, specifically touching on key themes around agility, modularity, reliability, and sustainability, as well as the disruptive potential of cloud computing, and the opportunities beyond compute, around storage.
+                  We are at an interesting inflection point in the design of computing systems. On one hand, demand for computing is accelerating at phenomenal rates, powered by the AI revolution and ever deeper processing on larger volumes of data, and amplified by smart edge devices and cloud computing. On the other hand, Moore's law is slowing down. This is challenging traditional assumptions around cheaper and more energy-efficient systems every generation, and leading to a significant supply-demand gap for future computing systems.  In this talk, we discuss how this current computing landscape motivates a significant rethinking of how we design future infrastructure. We present two broad themes around (1) efficient systems design through custom silicon accelerators and (2) efficient systems utilization through software-defined infrastructure. We will summarize our experience in these areas, and discuss key learnings and future opportunities for innovation. Looking ahead, we will highlight some additional grand challenges and opportunities for the community, specifically touching on key themes around agility, modularity, reliability, and sustainability, as well as the disruptive potential of cloud computing, and the opportunities beyond compute, around storage.
                 </p>
                 <hr>
                 <p>
