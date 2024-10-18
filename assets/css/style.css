@@ -786,7 +786,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
 }
 #schedule .schedule-item time {
-  font-size: 16px;
+  font-family: #0e1b4d;
+  font-size: 17px;
   padding-bottom: 5px;
   display: inline-block;
 }
@@ -806,10 +807,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: all ease-in-out 0.3s;
 }
 #schedule .schedule-item h4 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 4px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 #schedule .schedule-item h4 span {
   font-style: italic;
@@ -844,11 +845,48 @@ h1, h2, h3, h4, h5, h6 {
   color: #FF552E;
 }
 #schedule .schedule-item ul {
-  list-style-type: disc;
+  list-style-type: none;
+  padding-left: 1em;
 }
 
 #schedule .schedule-item ul li {
   margin: 10px 0;
+}
+
+#schedule .schedule-item ul li summary {
+  list-style: none;
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+  align-items: start;
+  cursor: pointer;
+}
+
+#schedule .schedule-item ul li summary::before {
+  content: '▶︎';
+  width: 1em;
+  flex-shrink: 0;
+  transition: 0.3s;
+}
+
+#schedule .schedule-item ul li details[open] > summary::before {
+  transform: rotate(90deg);
+  transform-origin: 40% 45% 0;
+}
+
+#schedule .schedule-item ul li details[open] .abstract {
+  animation: animateIn .3s ease-in-out forwards;
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    /* transform: translatey(-20%); */
+  }
+  100% {
+    opacity: 1;
+    /* transform: translatey(0); */
+  }
 }
 
 #schedule .schedule-item .abstract {
@@ -857,7 +895,7 @@ h1, h2, h3, h4, h5, h6 {
   /* box-shadow: 0 4px 15px 0 rgba(68, 88, 144, 0.12); */
   border-radius: 2%;
   /* margin: 20px 20px 20px 20px; */
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px 10px 10px;
   overflow: hidden;
   box-sizing: border-box;
   border-collapse: collapse;
@@ -881,7 +919,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #0e1b4d;
   float: left;
   position: relative;
-  max-width: calc(100% - 5rem);
+  max-width: calc(100% - 4rem);
 }
 
 /* #schedule .schedule-item ul li i {
@@ -895,10 +933,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 5px;
   color: #152b79;
   clear: both;
+  max-width: calc(100% - 1rem);
 }
 
 #schedule .schedule-item .keynote-title {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 0px;
   padding-bottom: 5px;
