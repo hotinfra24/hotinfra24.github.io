@@ -766,6 +766,196 @@
               </div>
             </div>
 
+            <div class="row schedule-item" style="padding-top: 3rem;">
+              <div class="col-md-2"></div>
+              <div class="col-md-10">
+                <h3>List of Papers Accepted as Posters</h3>
+                <!-- <p class="session-chair">Session Chair: Name (Organization)</p> -->
+                <ul>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Towards Static Analysis of Interrupt Blocking Time in Operating System Kernels</div>
+                            <div class="paper-metadata">
+                              <!-- <a href="./papers/hotinfra24-xx.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a> -->
+                            </div>
+                          </div>
+                          <div class="paper-authors">Thomas Preisner, Dustin Nguyen, Jonathan Krebs, Rüdiger Kapitza, Wolfgang Schröder-Preikschat (Friedrich-Alexander-Universität Erlangen-Nürnberg)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Interrupts are integral to the interaction between an OS and its managed devices. They notify the OS that something requires immediate attention. However, they also disrupt ongoing executions by design and, therefore, have to be inhibited in some cases. This process requires utmost care as unnecessarily long interrupt blocking times negatively impact system performance. In the worst case, missing those may even result in catastrophic failures. The associated cause analysis for delayed interrupt reception is often time-consuming and costly due to the complex interaction between devices and the system. Especially on commodity server systems with many devices, the cause of problems related to interrupt latencies is often masked.
+                        </p>
+                        <br>
+                        <p>
+                          In this paper, we make an initial effort towards providing means to developers of general-purpose OSs to minimize the worst-case interrupt-delivery latency by identifying excessive interrupt blocking times. We provide insights for the system developer into potentially problematic code paths where interrupts are masked by leveraging symbolic execution of LLVM IR for general-purpose OSs. We currently work with x86_64, but the analysis is applicable to other architectures with minimal adaptions.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Evaluating Infrastructure as Code: Key Metrics and Performance Benchmarks</div>
+                            <div class="paper-metadata">
+                              <a href="./papers/hotinfra24-final8.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                            </div>
+                          </div>
+                          <div class="paper-authors">Aditya Gupta, Paras Mittal, Dr. Kunal Korgaonkar (BITS Pilani, K K Birla Goa Campus)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Organizations are increasingly adopting Infrastructure as Code (IaC) to automate the management and provisioning of cloud resources, moving away from manual configurations. Despite its growing usage, there is a lack of comprehensive research evaluating the performance of IaC tools in large-scale, real-world scenarios with complex architectures. This paper addresses this gap by comparing Terraform and AWS CloudFormation, two leading IaC tools, across key performance metrics such as CPU usage, memory consumption, system time, and user time. Using the TrainTicket project, which encompasses 47 microservices, we evaluate both tools in a controlled environment to provide insights into their effectiveness in managing large-scale cloud infrastructures. Our findings offer valuable guidance for organizations choosing between Terraform and CloudFormation in enterprise-scale deployments.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Thallus: An RDMA-based Columnar Data Transport Protocol</div>
+                            <div class="paper-metadata">
+                              <a href="./papers/hotinfra24-final12.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                            </div>
+                          </div>
+                          <div class="paper-authors">Jayjeet Chakraborty (UC Santa Cruz); Matthieu Dorier, Philip Carns, Robert Ross (Argonne National Laboratory); Carlos Maltzahn, Heiner Litz (UC Santa Cruz)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> The volume of data generated and stored in contemporary global data centers is experiencing exponential growth. This rapid data growth necessitates efficient processing and analysis to extract valuable business insights. In distributed data processing systems, data undergoes exchanges between the compute servers that contribute significantly to the total data processing duration in adequately large clusters, necessitating efficient data transport protocols.
+                        </p>
+                        <br>
+                        <p>
+                          Traditionally, data transport frameworks such as JDBC and ODBC have used TCP/IP-over-Ethernet as their underlying network protocol. Such frameworks require serializing the data into a single contiguous buffer before handing it off to the network card, primarily due to the requirement of contiguous data in TCP/IP. In OLAP use cases, this serialization process is costly for columnar data batches as it involves numerous memory copies that hurt data transport duration and overall data processing performance. We study the serialization overhead in the context of a widely-used columnar data format, Apache Arrow, and propose leveraging RDMA to transport Arrow data over Infiniband in a zero-copy manner. We design and implement Thallus, an RDMA-based columnar data transport protocol for Apache Arrow based on the Thallium framework from the Mochi ecosystem, compare it with a purely Thallium RPC-based implementation, and show substantial performance improvements can be achieved by using RDMA for columnar data transport.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Delayed Privilege Escalation for Fast System Calls</div>
+                            <div class="paper-metadata">
+                              <!-- <a href="./papers/hotinfra24-xx.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a> -->
+                            </div>
+                          </div>
+                          <div class="paper-authors">Maximilian Ott, Phillip Raffeck, Rüdiger Kapitza, Wolfgang Schröder-Preikschat (Friedrich-Alexander-Universität Erlangen-Nürnberg)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Executing system calls requires switching the privilege level when entering the kernel. For high-performance applications, these costly switches can be omitted by directly linking with the kernel in the form of library operating systems or unikernels. However, this approach comes at the cost of compromising security as it removes user-/kernel-space separation. In other contexts, on-demand rather than proactive action allows paying overhead costs only when necessary.
+                        </p>
+                        <br>
+                        <p>
+                          We propose that single-address systems allow for an on-demand approach for system calls. When the operating-system data is hidden by the sheer size of the address space, elevated privileges are only necessary when performing privileged hardware operations. We believe that single-address systems would benefit from such an on-demand approach.
+                        </p>
+                        <br>
+                        <p>
+                          We introduce a concept that allows us to defer the privilege-level switch until it is needed, that is when the first privileged instruction is encountered. We present a prototype implementation of the concept as an adaption of the Linux kernel.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Industrial Trending on AI System Reliability: A Brief Review</div>
+                            <div class="paper-metadata">
+                              <!-- <a href="./papers/hotinfra24-xx.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a> -->
+                            </div>
+                          </div>
+                          <div class="paper-authors">Xun Jiao, Abhinav Pandey, Fred Lin (Meta)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> As AI systems grow in complexity and scale, particularly with the training of large language models (LLMs) that require large-scale GPU clusters, ensuring their reliability becomes increasingly critical. In the large-scale training job, a single GPU failure can disrupt an entire training job, affecting thousands of interconnected GPUs. We present a brief literature review of the latest industrial trending and efforts, focusing on reliability and fault tolerance of large-scale AI infrastructure, from companies such as Meta, Microsoft, ByteDance, and Alibaba. The review is structured around two main themes: (1) hardware failure analysis and top root causes, and (2) fault tolerance with hardware validation, failure detection, and checkpointing-based recovery.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Towards Using Partitioned GPU Virtual Functions for Mixture of Experts</div>
+                            <div class="paper-metadata">
+                              <!-- <a href="./papers/hotinfra24-xx.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a> -->
+                            </div>
+                          </div>
+                          <div class="paper-authors">Tony Yi, Vignesh Chander, Vamsi Alla, Jerry Jiang (AMD)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Recent advancements in large language models (LLMs) have shown that smaller, fine-tuned models have comparable or better performance against larger general-purpose models in domain-specific knowledge, even when quantized. However, these models suffer from several issues in production systems: under-utilizing memory and potential data security risks. We propose a new method of mixture of experts (MoE) inference utilizing GPU partitioning combined with single-root IO virtualization (SRIOV), enabling better utilization of GPU memory and scalability, while ensuring model weights remain secure. LLMs today come in a variety of sizes and quantization levels, each with its own memory requirement. Using SRIOV, we can partition the GPU into one or more virtual functions (VFs), altering allocated memory and compute to fit the needs of these LLMs. With AMD Instinct™ MI300X, for example, one VF can have 24 to 192GB of high bandwidth memory (HBM), scaling into 1.5TB per node. These SRIOV-enabled virtual machines also address the load imbalance inherent in MoE models, eliminating the need for an auxiliary loss for load balancing, while maintaining fast interconnect between all components, providing low latency during inference. Additionally, isolation capabilities built into SRIOV ensure native data security as virtual functions are isolated from each other, creating the possibility of new use cases where different vendors may provide their own expert to the mixture.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Redesigning Edge-Centric Micro-Datacenters for Efficient Multitenancy</div>
+                            <div class="paper-metadata">
+                              <!-- <a href="./papers/hotinfra24-xx.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a> -->
+                            </div>
+                          </div>
+                          <div class="paper-authors">Sudarsun Kannan (Rutgers University); Ram Durairajan, River Bartz (University of Oregon); Uli Kremer (Rutgers University)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Hazard monitoring systems depend on micro datacenters (MicroDCs) in remote areas for early disaster detection and response, and continuous environmental monitoring. These MicroDCs, limited by resources and energy, require efficient multi-tenant resource management, as traditional datacenter solutions for isolation and resource partitioning are insufficient in their dynamic environments. This paper focuses on memory resource sharing across multitenant applications in MicroDCs, demonstrating through experimental analysis of a real-time object detection framework and a NoSQL database that static partitioning leads to suboptimal performance and energy consumption. Our results reveal a non-linear relationship between performance, energy consumption and memory allocation, highlighting the potential for significant energy savings through optimized resource management.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">LLM Inference Performance on Chiplet-based Architectures and Systems</div>
+                            <div class="paper-metadata">
+                              <a href="./papers/hotinfra24-final97.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                            </div>
+                          </div>
+                          <div class="paper-authors">Surim Oh (UC Santa Cruz); Eric Qin, Yang Yang, Mengchi Zhang, Raj Parihar, Ashish Pandya (Meta)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Large Language Models (LLMs) have become increasingly prevalent, enabling a wide range of tasks across various platforms, from handheld devices and wearables to large-scale datacenters. Many of these applications, such as co-pilot and chatbot, rely on decoder-only style LLMs with multibillion parameters, which require significant computational resources to achieve desired performance metrics. As LLM workloads continue to evolve and demand more substantial computational resources, it is essential to explore innovative approaches to improve their performance.
+                        </p>
+                        <br>
+                        <p>
+                          One promising approach is the Multi-Chip-Module (MCM) architecture, which offers high-performance computing, storage, and network capabilities. However, the performance characteristics of LLMs on MCM architectures are not yet fully understood. To address this knowledge gap, we conducted a series of carefully designed experiments to investigate LLM inference performance on various MCM architectures. Our study provides detailed sensitivity analyses of dieto-die bandwidth, cache policies, and chiplet configurations, offering valuable insights into optimizing LLM performance on MCM architectures.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
           </div>
 
         </div>
