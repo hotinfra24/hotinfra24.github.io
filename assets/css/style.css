@@ -854,7 +854,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #schedule .schedule-item ul li summary {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   gap: 0.5em;
   margin-bottom: 0.5em;
@@ -876,6 +876,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #schedule .schedule-item ul li details[open] .abstract {
   animation: animateIn .3s ease-in-out forwards;
+}
+
+/* hide details summary marker for Safari */
+#schedule .schedule-item ul li details > summary::-webkit-details-marker {
+  display: none;
 }
 
 @keyframes animateIn {
