@@ -760,7 +760,117 @@
             </div>
 
             <div class="row schedule-item">
-              <div class="col-md-2"><time>5:30 PM</time></div>
+              <div class="col-md-2"><time>5:30 PM - 6:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Short Talk Session</h4>
+                <!-- <p class="session-chair">Session Chair: Name (Organization)</p> -->
+                <ul>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">LLM Inference Performance on Chiplet-based Architectures and Systems</div>
+                            <div class="paper-metadata">
+                              <a href="./papers/hotinfra24-final97.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                            </div>
+                          </div>
+                          <div class="paper-authors">Surim Oh (UC Santa Cruz); Eric Qin, Yang Yang, Mengchi Zhang, Raj Parihar, Ashish Pandya (Meta)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Large Language Models (LLMs) have become increasingly prevalent, enabling a wide range of tasks across various platforms, from handheld devices and wearables to large-scale datacenters. Many of these applications, such as co-pilot and chatbot, rely on decoder-only style LLMs with multibillion parameters, which require significant computational resources to achieve desired performance metrics. As LLM workloads continue to evolve and demand more substantial computational resources, it is essential to explore innovative approaches to improve their performance.
+                        </p>
+                        <br>
+                        <p>
+                          One promising approach is the Multi-Chip-Module (MCM) architecture, which offers high-performance computing, storage, and network capabilities. However, the performance characteristics of LLMs on MCM architectures are not yet fully understood. To address this knowledge gap, we conducted a series of carefully designed experiments to investigate LLM inference performance on various MCM architectures. Our study provides detailed sensitivity analyses of dieto-die bandwidth, cache policies, and chiplet configurations, offering valuable insights into optimizing LLM performance on MCM architectures.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Thallus: An RDMA-based Columnar Data Transport Protocol</div>
+                            <div class="paper-metadata">
+                              <a href="./papers/hotinfra24-final12.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
+                            </div>
+                          </div>
+                          <div class="paper-authors">Jayjeet Chakraborty (UC Santa Cruz); Matthieu Dorier, Philip Carns, Robert Ross (Argonne National Laboratory); Carlos Maltzahn, Heiner Litz (UC Santa Cruz)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> The volume of data generated and stored in contemporary global data centers is experiencing exponential growth. This rapid data growth necessitates efficient processing and analysis to extract valuable business insights. In distributed data processing systems, data undergoes exchanges between the compute servers that contribute significantly to the total data processing duration in adequately large clusters, necessitating efficient data transport protocols.
+                        </p>
+                        <br>
+                        <p>
+                          Traditionally, data transport frameworks such as JDBC and ODBC have used TCP/IP-over-Ethernet as their underlying network protocol. Such frameworks require serializing the data into a single contiguous buffer before handing it off to the network card, primarily due to the requirement of contiguous data in TCP/IP. In OLAP use cases, this serialization process is costly for columnar data batches as it involves numerous memory copies that hurt data transport duration and overall data processing performance. We study the serialization overhead in the context of a widely-used columnar data format, Apache Arrow, and propose leveraging RDMA to transport Arrow data over Infiniband in a zero-copy manner. We design and implement Thallus, an RDMA-based columnar data transport protocol for Apache Arrow based on the Thallium framework from the Mochi ecosystem, compare it with a purely Thallium RPC-based implementation, and show substantial performance improvements can be achieved by using RDMA for columnar data transport.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Towards Static Analysis of Interrupt Blocking Time in Operating System Kernels</div>
+                            <div class="paper-metadata">
+                              <!-- <a href="./papers/hotinfra24-xx.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a> -->
+                            </div>
+                          </div>
+                          <div class="paper-authors">Thomas Preisner, Dustin Nguyen, Jonathan Krebs, Rüdiger Kapitza, Wolfgang Schröder-Preikschat (Friedrich-Alexander-Universität Erlangen-Nürnberg)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Interrupts are integral to the interaction between an OS and its managed devices. They notify the OS that something requires immediate attention. However, they also disrupt ongoing executions by design and, therefore, have to be inhibited in some cases. This process requires utmost care as unnecessarily long interrupt blocking times negatively impact system performance. In the worst case, missing those may even result in catastrophic failures. The associated cause analysis for delayed interrupt reception is often time-consuming and costly due to the complex interaction between devices and the system. Especially on commodity server systems with many devices, the cause of problems related to interrupt latencies is often masked.
+                        </p>
+                        <br>
+                        <p>
+                          In this paper, we make an initial effort towards providing means to developers of general-purpose OSs to minimize the worst-case interrupt-delivery latency by identifying excessive interrupt blocking times. We provide insights for the system developer into potentially problematic code paths where interrupts are masked by leveraging symbolic execution of LLVM IR for general-purpose OSs. We currently work with x86_64, but the analysis is applicable to other architectures with minimal adaptions.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Delayed Privilege Escalation for Fast System Calls</div>
+                            <div class="paper-metadata">
+                              <!-- <a href="./papers/hotinfra24-xx.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a> -->
+                            </div>
+                          </div>
+                          <div class="paper-authors">Maximilian Ott, Phillip Raffeck, Rüdiger Kapitza, Wolfgang Schröder-Preikschat (Friedrich-Alexander-Universität Erlangen-Nürnberg)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Executing system calls requires switching the privilege level when entering the kernel. For high-performance applications, these costly switches can be omitted by directly linking with the kernel in the form of library operating systems or unikernels. However, this approach comes at the cost of compromising security as it removes user-/kernel-space separation. In other contexts, on-demand rather than proactive action allows paying overhead costs only when necessary.
+                        </p>
+                        <br>
+                        <p>
+                          We propose that single-address systems allow for an on-demand approach for system calls. When the operating-system data is hidden by the sheer size of the address space, elevated privileges are only necessary when performing privileged hardware operations. We believe that single-address systems would benefit from such an on-demand approach.
+                        </p>
+                        <br>
+                        <p>
+                          We introduce a concept that allows us to defer the privilege-level switch until it is needed, that is when the first privileged instruction is encountered. We present a prototype implementation of the concept as an adaption of the Linux kernel.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>6:00 PM</time></div>
               <div class="col-md-10">
                 <h4>SOSP Conference Reception</h4>
               </div>
